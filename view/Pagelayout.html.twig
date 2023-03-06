@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./public/css/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css" rel="stylesheet">
+    {# <link rel="shortcut icon" href="favicon.ico"/> #}
+    <title>PPE</title>
+</head>
+<body>
+    <header class="container-fluid">
+        {% block header %}
+            header par default
+        {% endblock %}
+        
+    </header>
+
+    <main class="row container-fluid">
+        <div class="col-3">
+            {% block left %}
+                left default
+            {% endblock %}
+        </div>
+        <div class="marge col-6 mt-5">
+            {% block body %}
+                body par defaut
+            {% endblock %}
+        </div>
+        <div class="col-2">
+            {% block right %}
+                right defaut
+            {% endblock %}
+        </div>
+    </main>
+    <footer class="container-flid relative-bottom footer text-center">
+        {% block footer %}
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #3b5998;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-facebook"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #55acee;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #dd4b39;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #ac2bac;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #0082ca;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-linkedin"></i
+                ></a>
+                <!-- Github -->
+                <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #333333;"
+                    href="#!"
+                    role="button"
+                    ><i class="bi bi-github"></i
+                ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        {% endblock %}
+    </footer>
+    {% block cookie %}
+        <div class="fixed-bottom container-fluid">
+            <div class="hstack gap-3 " tabindex="1">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            cookie
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    {% endblock %}
+    <script src="./public/js/jquery-3.6.1.min.js" type="application/javascript"></script>
+    <script src="./public/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="./public/js/default.js" type="application/javascript"></script>
+    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.3/dist/extensions/export/bootstrap-table-export.min.js"></script>
+
+</body>
+</html>
